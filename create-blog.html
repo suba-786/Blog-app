@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Write a post · Inkwell</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Newsreader:wght@500;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="create">
+<header><nav>
+<a class="logo" href="index.html">Inkwell</a>
+<a href="index.html">Home</a>
+<a href="dashboard.html">Dashboard</a>
+<a href="create-blog.html">Write</a>
+<a href="login.html">Log in</a>
+<a class="btn" href="register.html">Sign up</a>
+</nav></header>
+<main>
+<form class="form wide" id="blogForm" novalidate>
+<h2>New post</h2>
+<label for="title">Title</label>
+<input id="title" required maxlength="100">
+<label for="category">Category</label>
+<select id="category"><option>Tech</option><option>Life</option><option>Travel</option><option>Food</option></select>
+<label for="content">Content</label>
+<textarea id="content" required></textarea>
+<p class="msg" id="msg" role="alert"></p>
+<button class="btn" type="submit">Publish</button>
+</form>
+</main>
+<footer>© 2026 Inkwell</footer>
+<script src="script.js"></script>
+</body>
+</html>

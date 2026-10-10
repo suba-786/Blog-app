@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign up · Inkwell</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Newsreader:wght@500;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="register">
+<header><nav>
+<a class="logo" href="index.html">Inkwell</a>
+<a href="index.html">Home</a>
+<a href="dashboard.html">Dashboard</a>
+<a href="create-blog.html">Write</a>
+<a href="login.html">Log in</a>
+<a class="btn" href="register.html">Sign up</a>
+</nav></header>
+<main>
+<form class="form" id="registerForm" novalidate>
+<h2>Create your account</h2>
+<label for="name">Name</label>
+<input id="name" autocomplete="name" required>
+<label for="email">Email</label>
+<input id="email" type="email" autocomplete="email" required>
+<label for="password">Password (6+ characters)</label>
+<input id="password" type="password" autocomplete="new-password" required minlength="6">
+<label for="confirm">Confirm password</label>
+<input id="confirm" type="password" autocomplete="new-password" required>
+<p class="msg" id="msg" role="alert"></p>
+<button class="btn" type="submit">Create account</button>
+<p>Already registered? <a href="login.html">Log in</a></p>
+</form>
+</main>
+<footer>© 2026 Inkwell</footer>
+<script src="script.js"></script>
+</body>
+</html>
